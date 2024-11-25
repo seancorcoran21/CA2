@@ -6,3 +6,4 @@ app_name = 'accounts'
 urlpatterns = [
     path('create/', SignUpView.as_view(), name='signup'),
 ] 
+

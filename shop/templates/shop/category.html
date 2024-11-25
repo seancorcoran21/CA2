@@ -58,21 +58,19 @@
                     </div>
                 </div>
             {% endfor %}
-        
         </div>
         <div class="mx-auto">
             {% if prods.paginator.num_pages > 1 %}
                 <hr>
                 <div class="text-center">
                     {% for pg in prods.paginator.page_range %}
-                        <a href="?page={{pg}}" class="btn btn-light btn-sm {%
-                        if products.number == pg %}active{% endif
+                        <a href="?page={{pg}}" class="btn btn-light btn-sm {% 
+                        if products.number == pg %}active{% endif 
                         %}">{{pg}}</a>
                     {% endfor %}
-                </div>        
+                </div>
             {% endif %}
         </div>
-
         <br>
     </div>
 {% endblock %}

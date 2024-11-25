@@ -1,0 +1,158 @@
+[
+    {
+        "model": "shop.category",
+        "pk": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+        "fields": {
+            "name": "Polyester cushions",
+            "description": "Nice Polyester cushions"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+        "fields": {
+            "name": "Cotton cushions",
+            "description": "Nice soft cotton cushions"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "1b5e0aeb-c369-4107-8d53-323a753851f0",
+        "fields": {
+            "name": "Black Urban",
+            "description": "Give an elegant touch to your sofa with this classic scatter cushion.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "100.00",
+            "stock": 3,
+            "available": true,
+            "created": "2022-11-09T14:28:17.802Z",
+            "updated": "2022-11-09T14:28:17.802Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "262c652c-5718-4135-a805-9d3b9f92dc88",
+        "fields": {
+            "name": "Paw Patrol",
+            "description": "Bring their favourite Paw Patrol character home with this fun cushion.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "67.00",
+            "stock": 34,
+            "available": true,
+            "created": "2022-11-09T14:36:51.639Z",
+            "updated": "2022-11-09T14:36:51.639Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "3538774b-eb10-4fc3-a9e5-4ee97ca83271",
+        "fields": {
+            "name": "Elephant",
+            "description": "Linen-look textured front with a delicate elephant print. Complementary grey velvet backing.\r\nBeautifully finished piped trim.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "50.00",
+            "stock": 50,
+            "available": true,
+            "created": "2022-11-09T14:31:31.529Z",
+            "updated": "2022-11-09T14:31:31.529Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "42904639-f4e0-4ee2-af1a-50c25d2cea24",
+        "fields": {
+            "name": "Red Stripe",
+            "description": "Beautiful red chenille stripe cushion.Complimentary to other cushions or as a stand alone statement piece.Woven on a luxurious polyester quality base. Cushion pattern is repeated on both sides.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "45.00",
+            "stock": 80,
+            "available": true,
+            "created": "2022-11-09T14:40:37.129Z",
+            "updated": "2022-11-09T14:40:37.129Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "5d01bf86-6b54-4d1a-95fa-0bf027bb6789",
+        "fields": {
+            "name": "Red decorative cushion",
+            "description": "This velvet scatter cushion is perfect for the festive season.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "34.00",
+            "stock": 45,
+            "available": true,
+            "created": "2022-11-09T14:39:07.279Z",
+            "updated": "2022-11-09T16:27:17.785Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "6a8f1839-2539-470c-852c-8bbfd8991f5f",
+        "fields": {
+            "name": "Despicable Me",
+            "description": "Minions series products, cute appearance, is the best choice as a gift.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "30.00",
+            "stock": 3,
+            "available": true,
+            "created": "2022-11-09T14:30:11.380Z",
+            "updated": "2022-11-09T14:30:11.380Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "76975e51-0896-45a9-b4bf-44f712ec7f86",
+        "fields": {
+            "name": "Floral",
+            "description": "Go for classic florals in your living space with this printed cushion. It's crafted from plush cotton for a super-soft feel and has a colourful mirrored design.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "25.00",
+            "stock": 23,
+            "available": true,
+            "created": "2022-11-09T14:34:02.081Z",
+            "updated": "2022-11-09T14:34:02.081Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "93caa114-4b73-4ba0-aadc-5e4a22344158",
+        "fields": {
+            "name": "Pug Dog",
+            "description": "Superb quality and makes everyone smile!",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "23.00",
+            "stock": 50,
+            "available": true,
+            "created": "2022-11-09T14:37:55.896Z",
+            "updated": "2022-11-09T14:37:55.896Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "b6b7b98b-e860-44e6-bbcc-d3e05c802f3d",
+        "fields": {
+            "name": "Frida",
+            "description": "The stunning Frida cushion.  The perfect home d�cor for bedroom, couch, or Garden.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "15.00",
+            "stock": 19,
+            "available": true,
+            "created": "2022-11-09T14:35:41.801Z",
+            "updated": "2022-11-09T14:35:41.801Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "ca2a5389-ebd7-4462-a5e5-45b3972fda1d",
+        "fields": {
+            "name": "Woodland",
+            "description": "With its friendly animals, this cushion makes a wonderful choice for kids' bedrooms.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "45.00",
+            "stock": 77,
+            "available": true,
+            "created": "2022-11-09T14:41:33.470Z",
+            "updated": "2022-11-09T14:41:33.470Z"
+        }
+    }
+]

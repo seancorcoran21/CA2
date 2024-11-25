@@ -3,7 +3,7 @@
         <ul>
             {% if user.is_authenticated %}
             <li>
-                Welcome,
+                Welcome, 
                 <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ user.username }} <i class="fas fa-user-circle"></i>
                 </a>
@@ -16,6 +16,7 @@
                         </button>
                     </form>
                     <a href="#" class="dropdown-item">Change Password</a>
+                    <a href="{% url 'order:order_history' %}" class="dropdown-item">Order History</a>
                 </div>
             </li>
             {% else %}
