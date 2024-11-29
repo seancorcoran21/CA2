@@ -148,3 +148,8 @@
     width: 100%; 
     margin-bottom: 10px;
 }
+
+.img_bigger {
+	width: 500px;
+	height: 500px;
+}
