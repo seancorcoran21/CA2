@@ -4,14 +4,14 @@
     {% if category %}
         {{ category.description|truncatewords:155 }}
     {% else %}
-        Welcome to the cushion store where you can buy comfy and awesome cushions.
+        Welcome to the Connect. Take a look at our stock, lots of great Phones & Accesories to choose from
     {% endif %}
 {% endblock %}
 {% block title %}
     {% if category %}
-        {{ category.name }} - Perfect Cushion Store
+        {{ category.name }} - Connect Zone
     {% else %}
-        See Our Cushion Collection - Perfect Cushion Store
+        See Our Phone & Accesories Collection - Connect Zone
     {% endif %}
 {% endblock %}
 {% block content %}
@@ -37,7 +37,7 @@
     </div>
     <br>
     <div>
-        <h1 class="text-center my_title" >Our Products Collection</h1>
+        <h1 class="text-center my_title" >Phones & Accesories</h1>
         <p class="text-justify">Finding the perfect cushion for your room can instantly add to the levels of comfort and 
             sense of style throughout your home. They can transform the blandest of decors instantly 
             by adding colour, softness and an air of cosiness. As well as being comfy and looking great 
@@ -47,6 +47,25 @@
     <div class="container">
         <div class="row mx-auto">
             {% for product in prods %}
+                {% if product.is_sale %}
+
+                <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
+                    <div class="card text-center" style="min-width:18rem;">
+                        
+                        <!--Sale Badge-->
+                        <div class="badge bg-dark text white position-absolute" style="top: 0.5rem; right: 0.5rem;">Sale</div>
+                        <a class ="img" href="{{product.get_absolute_url}}"><img class="card-img-top      
+                          my_image"src="{{product.image.url}}" alt="{{product.name}}"></a>
+                        <div class="card-body">
+                            <h4>{{product.name}}</h4>
+                            <strike><p>€{{product.price}}</p></strike>€{{product.sale_price}}
+                            
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+
+
                 <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
                     <div class="card text-center" style="min-width:18rem;">
                         <a class ="img" href="{{product.get_absolute_url}}"><img class="card-img-top      
@@ -57,6 +76,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
             {% endfor %}
         </div>
         <div class="mx-auto">
