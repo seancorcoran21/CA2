@@ -97,7 +97,7 @@
 }
 .my_custom_menu ul li {
 	list-style: none;
-	color: #000;
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: .2em;
 	font-size: 12px;
@@ -106,7 +106,7 @@
 }
 .my_custom_menu ul li a {
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 	list-style: none;
 	text-transform: uppercase;
 	letter-spacing: .2em;

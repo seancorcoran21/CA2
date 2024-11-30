@@ -17,7 +17,7 @@
                 <br>
                 <h2 class="my_title">New Customer?</h2>
                 <br>
-                <a href="{% url 'accounts:signup' %}" class="btn btn-secondary">Create New Account</a>
+                <a href="{% url 'accounts:signup' %}" class="btn btn-dark">Create New Account</a>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 bg-light">
                 <div>
@@ -26,7 +26,7 @@
                     <form method="post">
                         {% csrf_token %}
                         <p>{{ form | crispy }}</p>
-                        <button type="submit" class="btn btn-secondary">Login</button>
+                        <button type="submit" class="btn btn-dark">Login</button>
                     </form>
                     <br>
                 </div>
