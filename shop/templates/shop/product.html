@@ -7,7 +7,8 @@
     {{ product.name }} - Connect Zone
 {% endblock %}
 {% block content %}
-    <div class="row my_prod_row_class">
+
+    <div class="row my_prod_row_class text-white">
         <div class="mx-auto">
             <p><a href="{% url 'shop:all_products' %}">Home</a> | <a href="{{product.category.get_absolute_url }}">{{product.category}}</a> | 
             {{product.name}}</p>
@@ -30,7 +31,7 @@
                         {% if product.stock == 0%}
                             <p class="text-justify my_prod_text"><b>Out of Stock</b></p>
                         {% else %}
-                            <a class="btn btn-secondary" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+                            <a class="btn btn-primary" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
                         {% endif %}
                     </div>
                 </div>
