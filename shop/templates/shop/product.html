@@ -8,9 +8,9 @@
 {% endblock %}
 {% block content %}
 
-    <div class="row my_prod_row_class text-white">
+    <div class="row my_prod_row_class">
         <div class="mx-auto">
-            <p><a href="{% url 'shop:all_products' %}">Home</a> | <a href="{{product.category.get_absolute_url }}">{{product.category}}</a> | 
+            <p class="text-light"><a class="text-light" href="{% url 'shop:all_products' %}">Home</a> | <a class="text-light" href="{{product.category.get_absolute_url }}">{{product.category}}</a> | 
             {{product.name}}</p>
         </div>
         <div class="container">
@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
                     <div style="min-width:18rem;">
-                        <img src="{{product.image.url}}" 
+                        <img style="height: 400px;" src="{{product.image.url}}" 
                         alt="{{product.name}}">
                     </div>
                 </div>
