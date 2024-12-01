@@ -76,7 +76,7 @@ def cart_detail(request, total=0, counter=0, cart_items = None):
                     'price_data': {
                         'currency': 'eur',
                         'product_data': {
-                            'name': 'Order from Perfect Cushion Shop',
+                            'name': 'Order from Connect Zero',
                         },
                         'unit_amount': stripe_total,
                     },
