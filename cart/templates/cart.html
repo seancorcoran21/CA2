@@ -132,12 +132,14 @@
                     <p>Apply a voucher:</p>
                     <form action="{% url 'vouchers:apply' %}" method="post">
                         {{ voucher_apply_form }}
+                        <br>
                         <input type="submit" value="Apply">
                         {% csrf_token %}
                     </form>
                     </tbody>
                 </table>
                 <!-- Payment Form -->
+                 <br>
                 <form action="{% url 'cart:cart_detail' %}" method="POST">
                     {% csrf_token %}
                     <button class="btn btn-secondary btn-block my_custom_button" type="submit">Pay with card</button>
