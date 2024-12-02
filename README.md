@@ -1,3 +1,9 @@
+SUPER USER - admin
+<br>
+Password - admin
+<br>
+<br>
+<br>
 SEAN CORCORAN, X00189029
 <br>
 HTML Code, Css Changes
@@ -14,9 +20,9 @@ Products, Descriptions, Etc
 <br>
 Product Categories
 <br>
-Sale Option
+Sale Option, Banner, Strike
 <br>
-
+                                                 
 
 PAUL KEHOE, X00211769
 <br>
