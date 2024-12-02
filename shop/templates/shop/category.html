@@ -19,7 +19,7 @@
     {% if category %}
         <div class="row my_row_class">
             <div class="mx-auto">
-                <p><a href="{% url 'shop:all_products' %}">Our Product Collection</a> | {{category.name}}</p>
+                <p class="text-light"><a class="text-light" href="{% url 'shop:all_products' %}">Our Product Collection</a> | {{category.name}}</p>
             </div>
         </div>
     {% endif %}
@@ -38,7 +38,7 @@
     <br>
     <div>
         <h1 class="text-center text-white my_title" >Phones & Accesories</h1>
-        <p class="text-justify text-center">All Models. Take Your Pick</p>
+        <p class="text-justify text-center">All Models. Take Your Pick.</p>
     </div>
     {% endif %}
     <div class="container">
@@ -52,11 +52,9 @@
                         <!--Sale Badge-->
                         <div class="badge bg-dark text white position-absolute" style="top: 0.5rem; right: 0.5rem;">Sale</div>
                         <a class ="img" href="{{product.get_absolute_url}}"><img class="card-img-top      
-                          my_image"src="{{product.image.url}}" alt="{{product.name}}"></a>
+                          my_image bg-light"src="{{product.image.url}}" alt="{{product.name}}"></a>
                         <div class="card-body">
-                            <h4>{{product.name}}</h4>
-                            <strike><p>€{{product.price}}</p></strike>€{{product.sale_price}}
-                            
+                            <h4>{{product.name}}</h4><s><p>€{{product.price}}</p></s>€{{product.sale_price}}
                         </div>
                     </div>
                 </div>
@@ -66,7 +64,7 @@
                 <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
                     <div class="card text-center" style="min-width:18rem;">
                         <a class ="img" href="{{product.get_absolute_url}}"><img class="card-img-top      
-                          my_image"src="{{product.image.url}}" alt="{{product.name}}"></a>
+                          my_image bg-light"src="{{product.image.url}}" alt="{{product.name}}"></a>
                         <div class="card-body">
                             <h4>{{product.name}}</h4>
                             <p>€{{product.price}}</p>

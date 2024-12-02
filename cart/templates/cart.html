@@ -51,9 +51,17 @@
                                 <td class="text-left">
                                     {{cart_item.product.name}}
                                     <br>
+                                    {% if cart_item.product.is_sale %}
+                                    Unit Price: €{{cart_item.product.sale_price}}
+                                    {% else %}
                                     Unit Price: €{{cart_item.product.price}}
+                                    {% endif %}
                                     <br>
+                                    {% if cart_item.product.is_sale %}
+                                    Qty: {{cart_item.quantity}} x €{{cart_item.product.sale_price}}
+                                    {% else %}
                                     Qty: {{cart_item.quantity}} x €{{cart_item.product.price}}
+                                    {% endif %}
                                 </td>
                                 <td>
                                     €{{cart_item.sub_total}}

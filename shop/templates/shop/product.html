@@ -25,7 +25,12 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                     <div>
                         <h1 class="my_prod_title">{{product.name}}</h1>
-                        <strike><p>€{{product.price}}</p></strike>€{{product.sale_price}}
+                        {% if product.is_sale %}
+                        <h2><s style="color: gray;">€{{product.price}}</s> €{{product.sale_price}}</h2>
+                        {% else %}
+                        <h2>€{{product.price}}</h2>
+                        {% endif %}
+                        <br>
                         <p class="my_title">Product Description</p>
                         <p class="text-justify my_prod_text">{{product.description|safe}}</p>
                         {% if product.stock == 0%}

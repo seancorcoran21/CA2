@@ -4,14 +4,16 @@ Website Pages
 Cart App
 Stripe Payments
 Images
-Products, Descriptions, Ect
+Products, Descriptions, Etc
 Product Categories
 Sale Option
 
 
-Paul Kehoe X
+Paul Kehoe, X00211769
 HTML Code, Css
 Products
 Product Categories
 Website Pages
-
+Images
+Formatting
+Logo
